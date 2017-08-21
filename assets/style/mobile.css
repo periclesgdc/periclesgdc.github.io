@@ -12,6 +12,7 @@
 #profile-img {
 	width: 30%;
 	margin-top: 30px;
+	box-shadow: 10px 10px 30px #000000;
 }
 
 #title {
@@ -52,18 +53,19 @@ li {
 	list-style-type: none;
 	margin: 10px 0px 10px 0px;
 	padding: 15px 0px 15px 0px;
-	border: 3px solid #3663ff;
 	border-radius: 5px;
 	font-size: 30px;
 	color: #000a44;
 }
 
 .light-blue {
-	background-color: #6495ed;
+	background-color: #5b50ff;
+	border: 3px solid #3663ff;
 }
 
 .dark-blue {
 	background-color: #617392;
+	border: 3px solid #900000;
 }
 
 a {
@@ -73,4 +75,9 @@ a {
 
 .reference {
 	font-size: 10px;
+}
+
+.long-text {
+	font-size: 210%;
+	
 }
