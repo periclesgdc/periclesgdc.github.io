@@ -6,12 +6,14 @@ $(document).ready(function(){
 		$(this).fadeOut(300, 'swing', $(this).attr('class', 'dark-blue')).fadeIn();
 		lastItem = $(this);
 	});
+
+	callAjax();
 });
 
 function callAjax(page) {
-	$.ajax({
+	/*$.ajax({
     type: 'POST',
-    url: ''+page+'.html',               
+    url: page+'.html',               
     cache: false,
     success: function(result) {
         if(result){
@@ -21,5 +23,6 @@ function callAjax(page) {
             alert("Erro");
         }
     }
-});
+});*/
+	$('#content').load('_hobbies.html', alert("deu"));
 }
