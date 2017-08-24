@@ -1,15 +1,18 @@
 $(document).ready(function(){
-	var lastItem = $('#menu ul li:nth-child(1)');
+	var lastItem = $("#menu ul li:first-child");
 
-	$('#menu ul li').mouseover(function() {
-		lastItem.fadeOut(300, 'swing', lastItem.attr('class', 'light-blue')).fadeIn();
-		$(this).fadeOut(300, 'swing', $(this).attr('class', 'dark-blue')).fadeIn();
+	$('#menu ul li').click(function() {
+		if ($(this).attr('class') != 'dark-blue') {
+			lastItem.fadeOut(200, 'swing', lastItem.attr('class', 'light-blue')).fadeIn();
+		}
+		$(this).fadeOut(200, 'swing', $(this).attr('class', 'dark-blue')).fadeIn();
 		lastItem = $(this);
 	});
 
 });
 
 function updateContent(index){
-	$('.visible').fadeOut().attr('class', 'hidden')
-	$('#content div:nth-child('+index+')').removeAttr('class').fadeIn().attr('class', 'visible');
+	$('.visible').attr('class', 'hidden').removeAttr('style');
+	$('#content div:nth-child('+index+')').fadeIn(200, 'swing').attr('class', 'visible');
+	
 }
