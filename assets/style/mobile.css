@@ -39,7 +39,7 @@
 
 #content {
 	margin: 25px 0px 25px 0px;
-	padding: 25px 0px 25px 0px;
+	padding: 25px 10px 25px 10px;
 	border: 3px solid #3663ff;
 	border-radius: 5px;
 }
@@ -88,4 +88,12 @@ a {
 figure img {
 	width: 45%;
 	margin 2px;
+}
+
+footer{
+	background-image: url('../images/bg-footer.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position-y: 55px;
+	padding: 0px 10px 80px 10px;
 }
