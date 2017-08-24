@@ -1,0 +1,91 @@
+#container {
+	width: 100%;
+	display: block;
+	font-family: Montserrat;
+}
+
+#container , #title, header, #profile-img {
+	margin: auto;
+	text-align: center;
+}
+
+#profile-img {
+	width: 30%;
+	margin-top: 30px;
+	box-shadow: 10px 10px 30px #000000;
+}
+
+#title {
+	height: 600px;
+	margin: auto;
+	background-image: url("../images/bg-header.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: 2px solid #3663ff;
+	border-radius: 5px;
+}
+
+#title p {
+	font-size: 80px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 30px #FFF;
+	margin-top: 15px;
+}
+
+.icon {
+	width: 3%;
+	margin-right: 5px;
+}
+
+#content {
+	margin: 25px 0px 25px 0px;
+	padding: 25px 0px 25px 0px;
+	border: 3px solid #3663ff;
+	border-radius: 5px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+	margin: 10px 0px 10px 0px;
+	padding: 15px 0px 15px 0px;
+	border-radius: 5px;
+	font-size: 30px;
+	color: #000a44;
+}
+
+.light-blue {
+	background-color: #5b50ff;
+	border: 3px solid #3663ff;
+}
+
+.dark-blue {
+	background-color: #617392;
+	border: 3px solid #900000;
+}
+
+a {
+	text-decoration: none;
+	color: #030094;
+}
+
+.reference {
+	font-size: 10px;
+}
+
+.long-text {
+	font-size: 210%;
+}
+
+.hidden {
+	display: none;
+}
+
+figure img {
+	width: 45%;
+	margin 2px;
+}
