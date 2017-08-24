@@ -20,6 +20,11 @@ li {
 	color: #000a44;
 }
 
+a {
+	text-decoration: none;
+	color: #030094;
+}
+
 .hidden {
 	display: none;
 }
