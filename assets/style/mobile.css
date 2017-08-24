@@ -79,5 +79,13 @@ a {
 
 .long-text {
 	font-size: 210%;
-	
+}
+
+.hidden {
+	display: none;
+}
+
+figure img {
+	width: 45%;
+	margin 2px;
 }

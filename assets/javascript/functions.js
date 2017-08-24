@@ -1,28 +1,15 @@
 $(document).ready(function(){
-	var lastItem = $("#menu ul li:nth-child(1)");
+	var lastItem = $('#menu ul li:nth-child(1)');
 
-	$("#menu ul li").mouseover(function() {
+	$('#menu ul li').mouseover(function() {
 		lastItem.fadeOut(300, 'swing', lastItem.attr('class', 'light-blue')).fadeIn();
 		$(this).fadeOut(300, 'swing', $(this).attr('class', 'dark-blue')).fadeIn();
 		lastItem = $(this);
 	});
 
-	callAjax();
 });
 
-function callAjax(page) {
-	/*$.ajax({
-    type: 'POST',
-    url: page+'.html',               
-    cache: false,
-    success: function(result) {
-        if(result){
-            $("content").html(result);
-        } 
-        else {
-            alert("Erro");
-        }
-    }
-});*/
-	$('#content').load('_hobbies.html', alert("deu"));
+function updateContent(index){
+	$('.visible').fadeOut().attr('class', 'hidden')
+	$('#content div:nth-child('+index+')').removeAttr('class').fadeIn().attr('class', 'visible');
 }
